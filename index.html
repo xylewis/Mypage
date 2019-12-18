@@ -1,1 +1,199 @@
-dfergthyjytjsyjsr
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>纯JS树形结构插件</title>
+</head>
+<body>
+    <div class="to__block">
+        <div class="to__left">
+            <div class="to__arrow"><span>←</span><span>→</span></div>
+            <div class="to__title">选择组织架构</div>
+            <div class="to__content">
+                <div class="to__search">
+                    <input id="searchInput" type="text" placeholder="请输入需要搜索的名称">
+                </div>
+                <div id="leftCont"></div>
+            </div>
+        </div>
+        <div class="to__right">
+            <div class="to__title">已选择（<span id="selectNum"></span>）人</div>
+            <div class="to__content" id="rightCont"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/index.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var baseData = [
+                {
+                    name: "xx公司",
+                    active: false,
+                    last: false,
+                    img: "",
+                    children: [
+                    // 模拟数据
+                    {
+                        name: "综合部",
+                        active: false,
+                        last: false,
+                        img: "",
+                        children: [
+                        {
+                            name: "小明爸爸",
+                            active: false,
+                            last: false,
+                            img: "",
+                            children: [
+                            {
+                                value: 1, // 最低一层必须提供 value 键名
+                                name: "小白",
+                                active: false,
+                                last: true, // last = true 代表最低一层
+                                img: "", // 个性化icon图标，否则采用默认
+                                children: [] // 每一个对象必须提供children键名，如果没有数据也需要一个空数组[]
+                            },
+                            {
+                                value: 2,
+                                name: "小明1",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明2",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明3",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明4",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明5",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明6",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明7",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明8",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明9",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明10",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            },
+                            {
+                                value: 2,
+                                name: "小明11",
+                                active: false,
+                                last: true,
+                                img: "",
+                                children: []
+                            }
+                            ]
+                        },
+                        {
+                            value: 3,
+                            name: "小红",
+                            children: [],
+                            active: false,
+                            last: true,
+                            img: ""
+                        }
+                        ]
+                    },
+                    {
+                        name: "技术部",
+                        active: false,
+                        last: false,
+                        img: "",
+                        children: [
+                        {
+                            value: 4,
+                            name: "小白",
+                            children: [],
+                            active: true,
+                            last: true,
+                            img: "./images/header-icon.png"
+                        },
+                        {
+                            value: 5,
+                            name: "小黑",
+                            children: [],
+                            active: false,
+                            last: true,
+                            img: ""
+                        }
+                        ]
+                    },
+                    {
+                        name: "UI部",
+                        active: false,
+                        last: false,
+                        img: "",
+                        children: []
+                    }
+                    ]
+                }
+            ];
+
+            var result = new group(baseData);
+            result.go();
+        }
+    </script>
+</body>
+</html>
