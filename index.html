@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
-    <title>树形结构</title>
+    <title>纯JS树形结构插件</title>
 </head>
 <body>
     <div class="to__block">
@@ -33,27 +33,27 @@
                     name: "xx公司",
                     active: false,
                     last: false,
-                    img: "./img/header-icon.png",
+                    img: "",
                     children: [
                     // 模拟数据
                     {
                         name: "综合部",
                         active: false,
                         last: false,
-                        img: "./img/header-icon.png",
+                        img: "",
                         children: [
                         {
                             name: "小明爸爸",
                             active: false,
                             last: false,
-                            img: "./img/header-icon.png",
+                            img: "",
                             children: [
                             {
                                 value: 1, // 最低一层必须提供 value 键名
                                 name: "小白",
                                 active: false,
                                 last: true, // last = true 代表最低一层
-                                img: "./img/header-icon.png", // 个性化icon图标，否则采用默认
+                                img: "", // 个性化icon图标，否则采用默认
                                 children: [] // 每一个对象必须提供children键名，如果没有数据也需要一个空数组[]
                             },
                             {
@@ -61,7 +61,7 @@
                                 name: "小明1",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -69,7 +69,7 @@
                                 name: "小明2",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -77,7 +77,7 @@
                                 name: "小明3",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -85,7 +85,7 @@
                                 name: "小明4",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -93,7 +93,7 @@
                                 name: "小明5",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -101,7 +101,7 @@
                                 name: "小明6",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -109,7 +109,7 @@
                                 name: "小明7",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -117,7 +117,7 @@
                                 name: "小明8",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -125,7 +125,7 @@
                                 name: "小明9",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -133,7 +133,7 @@
                                 name: "小明10",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             },
                             {
@@ -141,7 +141,7 @@
                                 name: "小明11",
                                 active: false,
                                 last: true,
-                                img: "./img/header-icon.png",
+                                img: "",
                                 children: []
                             }
                             ]
@@ -152,7 +152,7 @@
                             children: [],
                             active: false,
                             last: true,
-                            img: "./img/header-icon.png"
+                            img: ""
                         }
                         ]
                     },
@@ -160,7 +160,7 @@
                         name: "技术部",
                         active: false,
                         last: false,
-                            img: "./img/header-icon.png"
+                        img: "",
                         children: [
                         {
                             value: 4,
@@ -168,7 +168,7 @@
                             children: [],
                             active: true,
                             last: true,
-                            img: "./img/header-icon.png"
+                            img: "./images/header-icon.png"
                         },
                         {
                             value: 5,
@@ -176,7 +176,7 @@
                             children: [],
                             active: false,
                             last: true,
-                        img: "./img/header-icon.png",
+                            img: ""
                         }
                         ]
                     },
@@ -184,7 +184,7 @@
                         name: "UI部",
                         active: false,
                         last: false,
-                        img: "./img/header-icon.png",
+                        img: "",
                         children: []
                     }
                     ]
