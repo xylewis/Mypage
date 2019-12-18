@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-<style> 
-div
-{
-width:100px;
-height:100px;
-background:red;
-animation:myfirst 5s;
--moz-animation:myfirst 5s; /* Firefox */
--webkit-animation:myfirst 5s; /* Safari and Chrome */
--o-animation:myfirst 5s; /* Opera */
-}
-
-@keyframes myfirst
-{
-from {background:red;}
-to {background:yellow;}
-}
-
-@-moz-keyframes myfirst /* Firefox */
-{
-from {background:red;}
-to {background:yellow;}
-}
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
-{
-from {background:red;}
-to {background:yellow;}
-}
-
-@-o-keyframes myfirst /* Opera */
-{
-from {background:red;}
-to {background:yellow;}
-}
-</style>
-</head>
-<body>
- 
-<h1>我的第一个标题</h1>
- 
-<p>我的第一个段落。</p>
- 
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        background: blue;
+        animation: myfirst 5s;
+        -moz-animation: myfirst 5s; /* Firefox */
+        -webkit-animation: myfirst 1s; /* Safari and Chrome */
+        -o-animation: myfirst 5s; /* Opera */
+      }
+      @keyframes myfirst {
+        from {
+          background: blue;
+        }
+        to {
+          background: white;
+        }
+      }
+      @-moz-keyframes myfirst /* Firefox */ {
+        from {
+          background: blue;
+        }
+        to {
+          background: white;
+        }
+      }
+      @-webkit-keyframes myfirst /* Safari and Chrome */ {
+        from {
+          background: blue;
+        }
+        to {
+          background: white;
+        }
+      }
+      @-o-keyframes myfirst /* Opera */ {
+        from {
+          background: blue;
+        }
+        to {
+          background: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <h1>我的第一个标题</h1>
+    <p>我的第一个段落。</p>
+    
+  </body>
 </html>
